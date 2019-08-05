@@ -2,7 +2,7 @@ package edu.project1.booking;
 
 import edu.project1.cinema.Cinema;
 import edu.project1.cinema.Place;
-import edu.project1.cinema.Type_Of_Place;
+import edu.project1.cinema.TypeOfPlace;
 import edu.project1.clients.Client;
 import edu.project1.movies.Movie;
 import lombok.*;
@@ -26,7 +26,7 @@ public class Booking {
 
 
     private Booking(LocalDate localDate, Client client, Cinema cinema, Movie movie, Place bookedPlace) {
-        Payment_Status payment_status = Payment_Status.UNPAID;
+        PaymentStatus payment_status = PaymentStatus.UNPAID;
         this.booked_date = localDate;
         this.cinemaName = cinema;
         this.bookedPlace = bookedPlace;
@@ -47,7 +47,7 @@ public class Booking {
                 System.out.println("Choose a number of place");
                 int i = Integer.parseInt(bufferedReader.readLine());
                 System.out.println("Enter type of place (NORMAL, PREMIUM, VIP)");
-                Type_Of_Place sc = Type_Of_Place.valueOf(bufferedReader.readLine());
+                TypeOfPlace sc = TypeOfPlace.valueOf(bufferedReader.readLine());
                 Place place = new Place(i, sc);
                 if (movie.mapOfBookingPlace.containsKey(i) & movie.mapOfBookingPlace.containsValue(sc)) {
                     System.out.println("This place is already booked!");

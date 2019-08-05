@@ -8,7 +8,7 @@ import java.time.LocalTime;
 
 @AllArgsConstructor
 @ToString
-public enum Duration_Of_Movie {
+public enum DurationOfMovie {
     SESSION1(LocalTime.of(16, 00), LocalTime.of(18, 00)),
     SESSION2(LocalTime.of(19, 30), LocalTime.of(21, 00));
 

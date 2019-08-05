@@ -5,7 +5,7 @@ import lombok.Getter;
 
 @AllArgsConstructor
 @Getter
-public enum Status_of_Movie {
+public enum StatusOfMovie {
     PREPREMIERE(1.2),
     PREMIERE(1),
     AVAILABLE(0.8);

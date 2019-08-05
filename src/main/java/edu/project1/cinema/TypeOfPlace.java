@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @AllArgsConstructor
-public enum Type_Of_Place {
+public enum TypeOfPlace {
     NORMAL(20, 0.8),
     PREMIUM(10, 1.5),
     VIP(5, 2);

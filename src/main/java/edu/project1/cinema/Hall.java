@@ -13,7 +13,7 @@ public class Hall {
 
     public void printAllAvailablePlaces(Movie movie) {
         System.out.println("All available places:");
-        for (Type_Of_Place tp : Type_Of_Place.values()) {
+        for (TypeOfPlace tp : TypeOfPlace.values()) {
             for (int i = 1; i <= tp.getCountOfPlace(); i++) {
                 if (
                         movie.mapOfBookingPlace.containsKey(i) & movie.mapOfBookingPlace.get(i) == tp) continue;

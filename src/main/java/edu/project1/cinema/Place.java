@@ -8,11 +8,11 @@ public class Place {
     @Getter
     private int numberOfPlace;
     @Getter
-    Type_Of_Place type_of_place;
+    TypeOfPlace type_of_place;
     @Getter
     private boolean isReserved;
 
-    public Place(int numberOfPlace, Type_Of_Place type_of_place) {
+    public Place(int numberOfPlace, TypeOfPlace type_of_place) {
         this.numberOfPlace = numberOfPlace;
         this.type_of_place = type_of_place;
     }

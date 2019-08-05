@@ -18,14 +18,14 @@ public class Movie implements CalculateTicketPrice {
     @Getter
     @Setter
     private String category;
-    public Type_Of_Movie type_of_movie;
+    public TypeOfMovie type_of_movie;
     @Getter
-    public Status_of_Movie status_of_movie;
-    public Duration_Of_Movie duration_of_movie;
+    public StatusOfMovie status_of_movie;
+    public DurationOfMovie duration_of_movie;
     @ToString.Exclude
-    public Map<Integer, Type_Of_Place> mapOfBookingPlace = new HashMap<>();
+    public Map<Integer, TypeOfPlace> mapOfBookingPlace = new HashMap<>();
 
-    Movie(String name, Hall numberOfHall, String category, Type_Of_Movie type_of_movie, Status_of_Movie status_of_movie, Duration_Of_Movie duration_of_movie) {
+    Movie(String name, Hall numberOfHall, String category, TypeOfMovie type_of_movie, StatusOfMovie status_of_movie, DurationOfMovie duration_of_movie) {
         this.name = name;
         this.numberOfHall = numberOfHall;
         this.category = category;
