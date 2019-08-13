@@ -24,7 +24,7 @@ public class Booking {
     List<Movie> bookedMovies = new ArrayList<>();
     int amount = 0;
 
-
+    @Builder
     private Booking(LocalDate localDate, Client client, Cinema cinema, Movie movie, Place bookedPlace) {
         PaymentStatus payment_status = PaymentStatus.UNPAID;
         this.booked_date = localDate;

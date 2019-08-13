@@ -4,12 +4,13 @@ import lombok.Getter;
 import lombok.ToString;
 
 @ToString(includeFieldNames = false)
+@Getter
 public class Place {
-    @Getter
+
     private int numberOfPlace;
-    @Getter
+
     TypeOfPlace type_of_place;
-    @Getter
+    
     private boolean isReserved;
 
     public Place(int numberOfPlace, TypeOfPlace type_of_place) {

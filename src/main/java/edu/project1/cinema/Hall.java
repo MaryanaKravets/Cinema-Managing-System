@@ -7,8 +7,9 @@ import lombok.ToString;
 
 @AllArgsConstructor
 @ToString(includeFieldNames = false)
+@Getter
 public class Hall {
-    @Getter
+    
     public int number;
 
     public void printAllAvailablePlaces(Movie movie) {
